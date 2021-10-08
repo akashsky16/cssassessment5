@@ -1,0 +1,133 @@
+.container{
+    position: relative;
+}
+
+.cont{
+    position: absolute;
+    top: 10px;
+    left: 30%;
+
+
+}
+
+span{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: arial;
+
+}
+
+.happy{
+    background-color: orange;
+}
+
+.independence{
+    background-color: white;
+}
+
+.day{
+    background-color: rgb(33, 248, 33);
+}
+
+.cloud{
+    margin: -10px;
+    height: 450px;
+    width: 120%;
+}
+
+.sun{
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    animation-name: sun-animation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.city{
+    margin-top: -500px;
+    width: 200%;
+    height: 200px;
+    animation-name: city-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.road{
+    margin-top: -20px;
+    width: 200%;
+    height: 200px;
+    background-repeat: repeat-x;
+    animation-name: road-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+.car{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 36%;
+    bottom: 80px;
+}
+
+.flag{
+    position: absolute;
+    right: 480px;
+    bottom: 212px;
+    width: 75px;
+    height: 100px;
+}
+
+.tyre1{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 90px;
+    left: 38%;
+    animation-name: tyre-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.tyre2{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 90px;
+    left: 56%;
+    animation-name: tyre-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sun-animation{
+    100%{
+        transform: translateX(-1000px);
+    }
+}
+
+@keyframes road-animation{
+    100%{
+        transform: translateX(-1300px);
+    }
+}
+
+@keyframes city-animation{
+    100%{
+        transform: translateX(-600px);
+    }
+}
+
+@keyframes tyre-animation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
